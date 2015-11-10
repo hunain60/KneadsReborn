@@ -1,14 +1,23 @@
-body .custom-font3, .post-slider.style4 .caption.size-lg, .parallax .caption.size-lg, #header .logo, #nav > ul > li > a, .mobile-nav, .error404 .error-message-404 span, .coming-soon-page .error-message-404 span, .blank-page .error-message-404 span, .coming-soon-page .clock, .page-loading-wrapper header .logo {
+body, p, .custom-font3, .post-slider.style4 .caption.size-lg, .parallax .caption.size-lg, #header .logo, #nav > ul > li > a, .mobile-nav, .error404 .error-message-404 span, .coming-soon-page .error-message-404 span, .blank-page .error-message-404 span, .coming-soon-page .clock, .page-loading-wrapper header .logo {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 h1, h2 {
 	font-family: "Oswald", "Open Sans", Arial, Helvetica, sans-serif;
+	color: #F7B900;
 }
 
 #logo img{
 	padding-top:5px;
 	width:110px;
+}
+
+#header {
+	position: fixed;
+}
+
+#banner {
+    background-image: url("../../images/back.jpg");
 }
 
 #banner .content .image video {
@@ -32,15 +41,73 @@ body.landing #header {
 }
 
 .spotlight.style3 .content {
-	border-color: #F7B900
+	border-color: #F7B900;
 } 
 
 .spotlight.style2 .content {
-	border-color: #A0590E
-} 
+	border-color: #A0590E;
+}
 
 
-@media screen and (max-width: 736px){
+.image::before {
+    background-image: none;
+    opacity: 0.75;
+}
+
+#banner .content .image {
+    height: 25em;
+    width: 25em;
+}
+
+#banner::after {
+    opacity: 0.95;
+}
+
+#banner .content header h2 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+a:hover {
+	color: #F7B900 !important;
+	border-bottom-color: transparent;
+}
+
+#header nav ul li a, #header nav ul li span {
+    font-weight: 400;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active, input[type="reset"]:hover, input[type="reset"]:active, input[type="button"]:hover, input[type="button"]:active, .button:hover, .button:active {
+    box-shadow: 0 0 0 2px #F7B900 inset;
+    color: #F7B900 !important;
+}
+
+ul li {
+	margin: 0;
+    padding: 0 1em;
+}
+
+nav li:active, nav li:hover {
+	background-color: #EDEDED;
+}
+
+#four .content {
+    width: 40em;
+}
+
+#five {
+    background: gray;
+}
+
+input.special[type="submit"], .wrapper.style2 input.special[type="reset"], .wrapper.style2 input.special[type="button"], .wrapper.style2 .button.special {
+    background-color: #F7B900 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 736px) {
 	#titleBar img{
 		padding-top:5px;
 		width:80px;
