@@ -1,20 +1,25 @@
-(function($) {
+$(document).ready(function(){
+	var timer, cnt = 0;
 	
-	$(document).ready(){
-		images[]={'images/slider/dude0.png',
-		'images/slider/dude1.png',
-		'images/slider/dude2.png',
-		'images/slider/dude3.png',
-		'images/slider/dude4.png',
-		'images/slider/dude5.png',
-		'images/slider/dude6.png',
-		'images/slider/dude7.png',
-		'images/slider/dude8.png',
-		'images/slider/dude9.png',
-		'images/slider/dude10.png',
-		'images/slider/dude11.png'}
-		
-		
-	}
+	var images=['images/dude-slider/spot1.jpg',
+	'images/dude-slider/spot2.jpg',
+	'images/dude-slider/spot3.jpg',
+	'images/dude-slider/spot4.jpg',
+	'images/dude-slider/spot5.jpg',
+	'images/dude-slider/spot6.jpg']
+
+		var t = $('#slider');
+
+		// start a new timer
+		timer = setInterval(function() {
+
+		  // periodically change the src
+		  t.attr('src', images[cnt+1]);
+
+		  // and adjust the counter
+		  cnt = ( cnt + 1 ) % 11; // 0, 1, 2
+
+		}, 1000); // <- 1000ms = 1s
+});
+
 	
-}
