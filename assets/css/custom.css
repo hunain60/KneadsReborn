@@ -99,8 +99,8 @@ nav li:active, nav li:hover {
 }
 
 #four .content {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #000000;
+    background: black none repeat scroll 0 0;
+    color: white;
     width: 45em;
 }
 
@@ -123,6 +123,12 @@ nav li:active, nav li:hover {
 input.special[type="submit"], .wrapper.style2 input.special[type="reset"], .wrapper.style2 input.special[type="button"], .wrapper.style2 .button.special {
     background-color: #F7B900 !important;
     color: white !important;
+}
+
+#banner .content .image {
+    -webkit-border-radius: 100%; 
+	-moz-border-radius: 100%; 
+	border-radius: 100%; 
 }
 
 @media screen and (max-width: 736px) {
