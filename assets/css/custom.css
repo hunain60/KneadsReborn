@@ -3,7 +3,15 @@
 	width:110px;
 }
 
-
+#banner .content .image video {
+    border-radius: 0;
+    display: block;
+    height: 100%;
+    left: -40%;
+    margin: auto;
+    position: relative;
+    top: 0;
+}
 
 @media screen and (max-width: 736px){
 	#titleBar img{
