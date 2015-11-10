@@ -1,3 +1,11 @@
+body .custom-font3, .post-slider.style4 .caption.size-lg, .parallax .caption.size-lg, #header .logo, #nav > ul > li > a, .mobile-nav, .error404 .error-message-404 span, .coming-soon-page .error-message-404 span, .blank-page .error-message-404 span, .coming-soon-page .clock, .page-loading-wrapper header .logo {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+	font-family: "Oswald", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
 #logo img{
 	padding-top:5px;
 	width:110px;
@@ -7,11 +15,30 @@
     border-radius: 0;
     display: block;
     height: 100%;
+    width: auto;
     left: -40%;
     margin: auto;
     position: relative;
     top: 0;
 }
+
+.button {
+    margin: 1.5em 0;
+}
+
+body.landing #header {
+    background: white none repeat scroll 0 0;
+    color: black;
+}
+
+.spotlight.style3 .content {
+	border-color: #F7B900
+} 
+
+.spotlight.style2 .content {
+	border-color: #A0590E
+} 
+
 
 @media screen and (max-width: 736px){
 	#titleBar img{
