@@ -6,6 +6,14 @@
 
 (function($) {
 	
+	$('#buy').click(function(){
+		var q = $('#quantity').val();
+		
+		var link =  "http://kneads.co.uk/cart/6629091651:1";
+		link = link.replace(":1",":"+q);
+		window.location.href = link;
+	});
+	
 	$(window).resize(function(){
 		if ($(window).width() <= 980){	
 			$('#dude').attr('src','images/dude2.gif');

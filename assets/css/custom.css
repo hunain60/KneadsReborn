@@ -117,7 +117,7 @@ nav li:active, nav li:hover {
 	color: white;
 }
 
-#five {
+#six {
     background: gray;
 }
 
@@ -154,4 +154,8 @@ input.special[type="submit"], input.special[type="button"], .wrapper.style2 inpu
 #banner{
 	background-image:none;
 	background-color:white;
+}
+
+#five {
+	background:#fff;
 }
