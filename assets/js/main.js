@@ -5,6 +5,22 @@
 */
 
 (function($) {
+	
+	$(window).resize(function(){
+		if ($(window).width() <= 980){	
+			$('#dude').attr('src','images/dude2.gif');
+			$('#hands').attr('src','images/hands2.jpg');
+			$('#home').attr('src','images/home-environment2.jpg');		
+			$('#closeup').attr('src','images/closeup2.jpg');		
+			
+		} else{
+			$('#dude').attr('src','images/dude1.gif');
+			$('#hands').attr('src','images/hands.jpg');
+			$('#home').attr('src','images/home-environment.jpg');
+			$('#closeup').attr('src','images/closeup.jpg');		
+		}
+		
+	});
 
 	skel.breakpoints({
 		xlarge: '(max-width: 1680px)',

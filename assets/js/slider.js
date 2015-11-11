@@ -6,20 +6,23 @@ $(document).ready(function(){
 	'images/dude-slider/spot3.jpg',
 	'images/dude-slider/spot4.jpg',
 	'images/dude-slider/spot5.jpg',
-	'images/dude-slider/spot6.jpg']
+	'images/dude-slider/spot6.jpg'];
 
-		var t = $('#slider');
+		var t = $('#four');
 
 		// start a new timer
 		timer = setInterval(function() {
-
+		t.animate({opacity: 0}, 'slow', function() {
+        $(this)
+            .css({'background-image': 'url(' + images[cnt] + ')' })
+            .animate({opacity: 1});
+		});
 		  // periodically change the src
-		  t.attr('src', images[cnt+1]);
-
+		  //alert(t.attr('src'));
 		  // and adjust the counter
-		  cnt = ( cnt + 1 ) % 11; // 0, 1, 2
+		  cnt = ( cnt + 1 ) % 5; 
 
-		}, 1000); // <- 1000ms = 1s
+		}, 500); // <- 1000ms = 1s
 });
 
 	

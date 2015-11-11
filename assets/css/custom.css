@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 #banner {
-    background-image: url("../../images/back.jpg");
+  /*  background-image: url("../../images/back.jpg");  */
 }
 
 #banner .content .image video {
@@ -38,6 +38,7 @@ h1, h2 {
 body.landing #header {
     background: white none repeat scroll 0 0;
     color: black;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.11);
 }
 
 .spotlight.style3 .content {
@@ -99,7 +100,7 @@ nav li:active, nav li:hover {
 }
 
 #four .content {
-    background: black none repeat scroll 0 0;
+  
     color: white;
     width: 45em;
 }
@@ -113,14 +114,14 @@ nav li:active, nav li:hover {
 }
 
 #four p {
-	color: black;
+	color: white;
 }
 
 #five {
     background: gray;
 }
 
-input.special[type="submit"], .wrapper.style2 input.special[type="reset"], .wrapper.style2 input.special[type="button"], .wrapper.style2 .button.special {
+input.special[type="submit"], input.special[type="button"], .wrapper.style2 input.special[type="reset"], .wrapper.style2 input.special[type="button"], .wrapper.style2 .button.special {
     background-color: #F7B900 !important;
     color: white !important;
 }
@@ -136,4 +137,21 @@ input.special[type="submit"], .wrapper.style2 input.special[type="reset"], .wrap
 		padding-top:5px;
 		width:80px;
 	}
+}
+
+.spotlight:before{
+	background-image:none;
+}
+
+#banner h3{
+	color:black;
+}
+
+#banner:after{
+	background-image:none;
+}
+
+#banner{
+	background-image:none;
+	background-color:white;
 }
